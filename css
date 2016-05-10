@@ -1,5 +1,16 @@
 /* comment */
 
-selector {
+selector { 
   property: value; 
 }
+
+* universal selector 
+> directly nested within one another
+.class - when you want to apply a style to a group of elements
+#ID - when you want to apply a style to a specific element
+
+pseudo-class elements: 
+a:link - unvisited link
+a:visited - visited link
+a:hover - when hovering over link
+p:first child
