@@ -9,8 +9,8 @@
 ```prompt("what is your name")```
 * used to open dialogue to get user input
 
+## Print Statement
 ```console.log()```
-* print everything inside brackets, log it to console below code
 
 ```confirm("information")```
 * pop up box with text in quotes printed 
