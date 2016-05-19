@@ -87,7 +87,7 @@ default:
 ```
 
 ### Creating Objects/Classes
-* object literal notation
+Object Literal Notation:
 ```javascript 
 var Object = {
     key: value, 
@@ -95,18 +95,23 @@ var Object = {
 }
 ```
 
-* object constructor: `var name = new Object();`
-* add keys after object was created: 
+Object Constructor: 
+```javascript
+var name = new Object();
+```
+
+Add Keys After Object was Created: 
 ```javascript  
 Obj["name"] = "amy";
 Obj.name = "amy";
 ```
 
-* making constructors
+Making Constructors:
 ```javascript 
-function Person(name, age){
+function Person(name, age, gpa){
 	this.name = name;
 	this.age = age;
+	var gpa = gpa; //private variable, can be obtained by a getter
 }
 ```
 
@@ -121,6 +126,7 @@ classname.prototype.newMethod = function(){
 	//statements
 }
 ```
+* prototype chain: if Javascript can't find a method in the current class, it moves up the chain until it gets to the Object class
 
 ### Inheritance 
 * X is-a Y relationship: Y's protype needs to be Y (Ex. a penguin is an animal. Therefore, penguin's prototype is animal) 
