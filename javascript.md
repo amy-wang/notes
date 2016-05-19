@@ -16,8 +16,8 @@
 `confirm("information")`
 
 ### Functions 
-*`"string".length`
-*`"string".substring(1, 4)`
+* `"string".length`
+* `"string".substring(1, 4)`
 
 ### Declaring Functions 
 ```javascript 
