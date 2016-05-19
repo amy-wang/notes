@@ -84,7 +84,7 @@ default:
 }
 ```
 
-### Creating Objects
+### Creating Objects/Classes
 * object literal notation
 ```
 var Object = {
@@ -111,3 +111,10 @@ function Person(name, age){
 ### Objects 
 * to access properties, use dot notation: `object.PropertyName` or bracket notation: `object[PropertyName]`
 * `this` keyword: refers to whatever object the method was called on (placeholder), use when creating new objects 
+
+### Prototypes 
+* extend the prototype: allow all members of a class to use a certain method 
+```javascript 
+classname.prototype.newMethod = function(){
+	//statements
+}
