@@ -6,19 +6,14 @@
 * numbers, string (in quotes), boolean (true, false)
 
 # Commands
-`prompt("what is your name")`
 * used to open dialogue to get user input
+`prompt("what is your name")`
 
-<<<<<<< HEAD
-`console.log()`
 * print everything inside brackets, log it to console below code
-=======
-## Print Statement
-```console.log()```
->>>>>>> 2c1cb079de9517b205ec391613babfc6e0b7418d
+`console.log()`
 
-`confirm("information")`
 * pop up box with text in quotes printed 
+`confirm("information")`
 
 # Functions 
 *`"string".length`
@@ -107,7 +102,3 @@ Obj.name = "amy";
 
 
 
-
-=======
-```
->>>>>>> 2c1cb079de9517b205ec391613babfc6e0b7418d
