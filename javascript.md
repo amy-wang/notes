@@ -47,7 +47,8 @@ if (){
 	console.log();
 }
 	else{
-}```
+}
+```
 
 ### Control Flow
 * for loops 
@@ -119,3 +120,11 @@ function Person(name, age){
 classname.prototype.newMethod = function(){
 	//statements
 }
+```
+
+### Inheritance 
+* X is-a Y relationship: Y's protype needs to be Y (Ex. a penguin is an animal. Therefore, penguin's prototype is animal) 
+* penguin inherits properties from animal:
+```javascript 
+penguin.prototype = new Animal();
+```
