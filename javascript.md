@@ -20,11 +20,11 @@
 *`"string".substring(1, 4)`
 
 ### Declaring Functions 
-``javascript 
+```javascript 
 var functionName = function(parameter){
 		console.log(parameter)
 }
-``
+```
 * use keywords var and `function` to declare a function
 
 ### Operators
@@ -42,35 +42,36 @@ var functionName = function(parameter){
 `var varName = data;`
 
 ### if statements 
-```if (){
-		console.log();
+```javascript 
+if (){
+	console.log();
 }
-else{
+	else{
 }```
 
 ### Control Flow
 * for loops 
-```
+```javascript 
 for (var i = 0; i < 10; i++){
     statements;
 }
 ```
 
 * while loops
-```
+```javascript 
 while (bool){
     statements;
 }
 ```
 * do loops: runs once before it checks the while condition
-```
+```javascript 
 do{
     statements;
 } while (bool); 
 ```
 
 * switch construct: so that a large amount of if/else can be avoided 
-```
+```javascript 
 switch(prompt("question"){
 case "1": 
     //statements
@@ -86,7 +87,7 @@ default:
 
 ### Creating Objects/Classes
 * object literal notation
-```
+```javascript 
 var Object = {
     key: value, 
     key: value
@@ -95,13 +96,13 @@ var Object = {
 
 * object constructor: `var name = new Object();`
 * add keys after object was created: 
-``` 
+```javascript  
 Obj["name"] = "amy";
 Obj.name = "amy";
 ```
 
 * making constructors
-```
+```javascript 
 function Person(name, age){
 	this.name = name;
 	this.age = age;
