@@ -37,37 +37,38 @@ var functionName = function(parameter){
 * `!==`: not equal to 
 
 ## Variables 
-` var varName = data;`
+`var varName = data;`
 
 ## if statements 
-``if (){
+```if (){
 		console.log();
 }
 else{
-}``
+}```
 
 ## Control Flow
 * for loops 
-``
+```
 for (var i = 0; i < 10; i++){
     statements;
 }
-``
+```
 
 * while loops
-``
+```
 while (bool){
     statements;
 }
-``
+```
 * do loops: runs once before it checks the while condition
-``do{
+```
+do{
     statements;
 } while (bool); 
-``
+```
 
 * switch construct: so that a large amount of if/else can be avoided 
-``
+```
 switch(prompt("question"){
 case "1": 
     //statements
@@ -79,26 +80,34 @@ default:
     //statements
     break;
 }
-``
+```
 
 ## Creating Objects
 * object literal notation
-``var Object = {
+```
+var Object = {
     key: value, 
     key: value
 }
-<<<<<<< HEAD
-``
+```
 
 * object constructor: `var name = new Object();`
 * add keys after object was created: 
-`` 
+``` 
 Obj["name"] = "amy";
 Obj.name = "amy";
-``
+```
+
+* making constructors
+```
+function Person(name, age){
+	this.name = name;
+	this.age = age;
+}
+```
 
 ## Objects 
-* to access properties, use `object.PropertyName` or `object[PropertyName]`
-
+* to access properties, use dot notation: `object.PropertyName` or bracket notation: `object[PropertyName]`
+* `this` keyword: refers to whatever object the method was called on (placeholder), use when creating new objects 
 
 
