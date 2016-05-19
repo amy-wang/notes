@@ -9,8 +9,13 @@
 `prompt("what is your name")`
 * used to open dialogue to get user input
 
+<<<<<<< HEAD
 `console.log()`
 * print everything inside brackets, log it to console below code
+=======
+## Print Statement
+```console.log()```
+>>>>>>> 2c1cb079de9517b205ec391613babfc6e0b7418d
 
 `confirm("information")`
 * pop up box with text in quotes printed 
@@ -87,6 +92,7 @@ default:
     key: value, 
     key: value
 }
+<<<<<<< HEAD
 ``
 
 * object constructor: `var name = new Object();`
@@ -102,3 +108,6 @@ Obj.name = "amy";
 
 
 
+=======
+```
+>>>>>>> 2c1cb079de9517b205ec391613babfc6e0b7418d
