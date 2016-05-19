@@ -2,10 +2,10 @@
 
 * used to build responsive websites, build apps/games, access info, organize and present data 
 
-# Data Types 
+## Data Types 
 * numbers, string (in quotes), boolean (true, false)
 
-# Commands
+## Commands
 * used to open dialogue to get user input
 `prompt("what is your name")`
 
@@ -15,11 +15,11 @@
 * pop up box with text in quotes printed 
 `confirm("information")`
 
-# Functions 
+## Functions 
 *`"string".length`
 *`"string".substring(1, 4)`
 
-# Declaring Functions 
+## Declaring Functions 
 ``javascript 
 var functionName = function(parameter){
 		console.log(parameter)
@@ -27,26 +27,26 @@ var functionName = function(parameter){
 ``
 * use keywords var and `function` to declare a function
 
-# Arithmetic 
+## Arithmetic 
 * basic arithmetic: use *, /, -, +
 * `%`: modulo 
 
-# Comparison 
+## Comparison 
 * use `>`, `<` 
 * `===`: equal to
 * `!==`: not equal to 
 
-# Variables 
+## Variables 
 ` var varName = data;`
 
-# if statements 
+## if statements 
 ``if (){
 		console.log();
 }
 else{
 }``
 
-# Control Flow
+## Control Flow
 * for loops 
 ``
 for (var i = 0; i < 10; i++){
@@ -81,7 +81,7 @@ default:
 }
 ``
 
-# Creating Objects
+## Creating Objects
 * object literal notation
 ``var Object = {
     key: value, 
@@ -97,7 +97,7 @@ Obj["name"] = "amy";
 Obj.name = "amy";
 ``
 
-# Objects 
+## Objects 
 * to access properties, use `object.PropertyName` or `object[PropertyName]`
 
 
