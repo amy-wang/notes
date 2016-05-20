@@ -19,14 +19,6 @@
 * `"string".length`
 * `"string".substring(1, 4)`
 
-### Declaring Functions 
-```javascript 
-var functionName = function(parameter){
-		console.log(parameter)
-}
-```
-* use keywords var and `function` to declare a function
-
 ### Operators
 * basic arithmetic: use *, /, -, +
 * `%`: modulo
@@ -86,6 +78,11 @@ default:
 }
 ```
 
+### Objects 
+* all objects can be thought of as a dictionary 
+* to access properties, use dot notation: `object.PropertyName` or bracket notation: `object[PropertyName]`
+* `this` keyword: refers to whatever object the method was called on (placeholder), use when creating new objects 
+
 ### Creating Objects/Classes
 Object Literal Notation:
 ```javascript 
@@ -115,9 +112,14 @@ function Person(name, age, gpa){
 }
 ```
 
-### Objects 
-* to access properties, use dot notation: `object.PropertyName` or bracket notation: `object[PropertyName]`
-* `this` keyword: refers to whatever object the method was called on (placeholder), use when creating new objects 
+### Declaring Functions 
+* use keywords var and `function` to declare a function
+* essentially an object that can be called 
+```javascript 
+var functionName = function(parameter){
+		console.log(parameter)
+}
+```
 
 ### Prototypes 
 * extend the prototype: allow all members of a class to use a certain method 
