@@ -17,3 +17,19 @@ CREATE TABLE table_name(
   );
 ```
 
+## Commands
+* select data from a database (* = select everything) 
+  `SELECT * FROM TABLE` 
+* return only distinct values
+  `SELECT DISTINCT column_name FROM table_name` 
+* select data that fulfills criterion 
+  `SELECT * FROM table WHERE item = "name"`
+* order by sorts data into ascending order by default, specify DESC for descending order
+  `SELECT * FROM table ORDER BY column;` 
+* insert new values into table 
+  ```
+  INSERT INTO table_name (column1, column2, column3) 
+  VALUES (value1, value2, value3) 
+  ```
+* delete 
+  `DELETE FROM table WHERE column = "value";` 
