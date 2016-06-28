@@ -20,6 +20,7 @@ CREATE TABLE table_name(
 ## Commands
 * select data from a database (* = select everything) 
   `SELECT * FROM TABLE` 
+  `SELECT TOP 50 PERCENT FROM TABLE` 
 * return only distinct values
   `SELECT DISTINCT column_name FROM table_name` 
 * select data that fulfills criterion 
@@ -32,4 +33,7 @@ CREATE TABLE table_name(
   VALUES (value1, value2, value3) 
   ```
 * delete 
-  `DELETE FROM table WHERE column = "value";` 
+  `DELETE FROM table WHERE column = "value";`
+
+## User Input 
+* to get user input, `input = getRequestString("User ID");`
