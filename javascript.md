@@ -1,39 +1,51 @@
 # Javascript 
 
 * used to build responsive websites, build apps/games, access info, organize and present data 
+* must be in <script></script> tags
 
-### Data Types 
-* numbers, string (in quotes), boolean (true, false)
+### Altering HTML elements
+`document.getElementById("myImage").src = "pic.gif"`;
 
-### Commands
-* used to open dialogue to get user input
-`prompt("what is your name")`
+### Javascript Display
+* innerHTML defines HTML content
+`document.getElementById("demo").innerHTML= 'ex'`
+* printing for testing purposes, if at the end will delete everything on the HTML page
+`document.write(5)`
+* printing for debugging purposes
+`console.log(5)`
+* popup window
+`window.alert(5)`
 
-* print everything inside brackets, log it to console below code
-`console.log()`
-
-* pop up box with text in quotes printed 
-`confirm("information")`
-
-### Functions 
-* `"string".length`
-* `"string".substring(1, 4)`
+### Keywords
+* var: `var varName = data;`
+* break
+* continue: jumps out of a loop, starts at the top
+* try...catch 
+* return: exits a function 
 
 ### Operators
-* basic arithmetic: use *, /, -, +
-* `%`: modulo
-* `typeof something`: tells you the type of something (ex. number, string, object) 
-* `obj.hasOwnProperty`: returns true or false based on if it has that property
+* Comparison: 
+    * `>`, `<` 
+    * `===`: equal to
+    * `!==`: not equal to 
+    * `===`: equal value and equal type
+* Logic
+    * `&&`, `||`, `!`
+* Strings
+    * Concatenate: `+`
+* Type
+    * `typeof something`: tells you the type of something (ex. number, string, object) 
+    * `obj.instanceof()`: returns true if object is an instance of an object type
 
-### Comparison 
-* use `>`, `<` 
-* `===`: equal to
-* `!==`: not equal to 
+### Data Types
+* dynamic: same variable can hold different data types
+* arrays: [item1, item2]
+* Objects: {firstName:"john", lastName: "Doe"}
+* undefined: variable without a value
+* empty value: "" is a string
+* null: nothing (var person = null)
 
-### Variables 
-`var varName = data;`
-
-### if statements 
+### Conditional
 ```javascript 
 if (){
 	console.log();
@@ -41,29 +53,7 @@ if (){
 	else{
 }
 ```
-
-### Control Flow
-* for loops 
-```javascript 
-for (var i = 0; i < 10; i++){
-    statements;
-}
-```
-
-* while loops
-```javascript 
-while (bool){
-    statements;
-}
-```
-* do loops: runs once before it checks the while condition
-```javascript 
-do{
-    statements;
-} while (bool); 
-```
-
-* switch construct: so that a large amount of if/else can be avoided 
+* switch: avoid a large amount of if/else statements
 ```javascript 
 switch(prompt("question"){
 case "1": 
@@ -78,48 +68,67 @@ default:
 }
 ```
 
+### Loops
+* for loops 
+```javascript 
+for (var i = 0; i < 10; i++){
+    statements;
+}
+```
+* while loops
+```javascript 
+while (bool){
+    statements;
+}
+```
+* do loops: runs once before it checks the while condition
+```javascript 
+do{
+    statements;
+} while (bool); 
+```
+
+### Functions
+* invoked when somehting calls the function (through an event, self invoked, or called from Javascript code)
+* `()` invokes a function
+```
+function name(parameter1, parameter2, parameter3){
+    code to be executed
+    return;
+}
+```
+
 ### Objects 
 * all objects can be thought of as a dictionary 
-* to access properties, use dot notation: `object.PropertyName` or bracket notation: `object[PropertyName]`
+* Access Properties: `object.PropertyName` or `object[PropertyName]`
+* Access Methods: `object.methodName()`
 * `this` keyword: refers to whatever object the method was called on (placeholder), use when creating new objects 
 
 ### Creating Objects/Classes
-Object Literal Notation:
+Define an Object:
 ```javascript 
 var Object = {
     key: value, 
     key: value
 }
 ```
-
-Object Constructor: 
+Create new Object: 
 ```javascript
 var name = new Object();
 ```
 
-Add Keys After Object was Created: 
-```javascript  
-Obj["name"] = "amy";
-Obj.name = "amy";
-```
-
-Making Constructors:
-```javascript 
-function Person(name, age, gpa){
-	this.name = name;
-	this.age = age;
-	var gpa = gpa; //private variable, can be obtained by a getter
-}
-```
-
-### Declaring Functions 
-* use keywords var and `function` to declare a function
-* essentially an object that can be called 
-```javascript 
-var functionName = function(parameter){
-		console.log(parameter)
-}
-```
+### Events
+* execute code when an event ahppens
+<some-HTML-element some-event='Javascript'>
+Example
+`<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>`
+Common HTML Events
+* onchange: HTML element has been changed
+* onclick
+* onmouseover
+* onmouseout
+* onkeydown
+* onload
 
 ### Prototypes 
 * extend the prototype: allow all members of a class to use a certain method 
