@@ -1,0 +1,106 @@
+INTRODUCTION TO SWIFT 
+
+Define variable: var
+Define constant: let 
+
+Type Inference
+- var str:String 
+- if you do var str = "hi" it infers that str is a string
+? optional (might not be that type, might be nothing - nil)
+
+print()
+
+Control Flow 
+
+if condition {
+	do something
+} else if {
+	do something
+} else {
+	do something
+}
+
+switch condition{
+case 6...10: // 6 to 10 
+	do something
+case 5..<7: 
+	do something	
+default:
+	do something
+}
+
+while (condition){
+	do something
+}
+
+for (var number = 0; number < 10; number++){
+	do something
+}
+for number in 0..<10{
+	do something
+}
+for number in [2,5,1,9]{
+	do something
+}
+
+Array
+- strongly typed 
+- cannot access out of bounds items
+[item1, item2, item3]
+var animals:[String] = ["cow", "dog", "bunny"]
+animals[0] //refers to cow
+
+
+Dictionary 
+- if an item isn't in dictionary, returns nil (optional type)
+var cuteness = ["cow": "not very", "dog": "cute", "bunnny": "very cute"]
+
+Functions
+- if you want to modify a parameter, mark it with var but it's not changing the actual value 
+-inout: pass a parameter by reference, must pass it with &
+func perform(operation:String, on a:Double, and b:Double){
+	print("performing", operation, "on", a, "and", b)
+}
+perform("+", on: 1.0, and: 2.0)
+
+Optionals
+- could be another type (add ? in definition of type)
+- unwrap: add ! to force it to be the type
+
+Closures
+- different way of declaring function 
+var newMagicFunction = {
+	(spell: String) -> String in 
+	return spell;
+}
+
+Properties 
+struct Animal {
+	var name: String = ""
+	var heightInches = 0.0
+	var heightCM: Double{
+		get{
+			return 2.54*heighInches
+		}
+		set(newHeightCM){
+		}
+	}
+}
+let dog = Animal(name: "dog", heightInches: 50)
+dog.heightInches
+
+Extension 
+- add functionality to existing class
+extension SomeType: SomeProtocol, AnotherProtocol {
+	var km: Double {return self * 1_000 }
+	var m: Double { return self }
+}
+
+IOS: TUTORIAL 1
+
+Action Methods @IBAction
+- allows interface builder to see method so can be connected to buttons, sliders, etc. 
+- reference of object that triggered the action: @IBAction func sliderMoved(_ slider: UISlider)
+
+- alerts work asynchoronously 
+- handler: tells alert what should happen when button is pressed 
