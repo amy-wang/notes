@@ -121,6 +121,9 @@ var name = function(){
     // code to be executed
 }
 
+### Callback Functions
+* derived from functional programming - use functions as arguments
+
 ### Objects 
 * all objects can be thought of as a dictionary 
 * Access Properties: `object.PropertyName` or `object[PropertyName]`
