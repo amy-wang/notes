@@ -49,6 +49,8 @@ class Choice(models.Model):
 
 ### Views
 * return HttpResponse object containing requested page or exception such as Http404
+* `render()`: request object as first argument, template name as second argument, dictionary as third argument 
+* `get_object_or_404()`: takes django model as first argument and arbitrary number of keyword arguments 
 
 ### Context
 * dictionary that maps template variable names to Python objects 
